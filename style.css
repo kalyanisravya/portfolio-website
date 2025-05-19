@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  color: #333;
+  transition: background 0.4s, color 0.4s;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+}
+
+#modeToggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.profile-img {
+  width: 140px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+.typing {
+  font-size: 20px;
+  font-weight: bold;
+  color: #444;
+  height: 30px;
+  margin-top: 10px;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.highlight {
+  color: #007BFF;
+}
+
+ul {
+  list-style: square;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.dark-mode {
+  background: #111;
+  color: #eee;
+}
+
+.dark-mode header,
+.dark-mode .project-card {
+  background: rgba(255,255,255,0.05);
+  color: #eee;
+}
+.dark-mode .nav-links a {
+  color: #f0f0f0; /* Light color for dark mode */
+}
+
+.dark-mode .logo {
+  color: #f0f0f0;
+}
+.profile-img {
+  width: 170px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+#backend-hint {
+  margin-top: 30px;
+  padding: 30px;
+  background: #f0f8ff;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+.section-subtext {
+  font-size: 1rem;
+  color: #333;
+  font-style: italic;
+}
+
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
